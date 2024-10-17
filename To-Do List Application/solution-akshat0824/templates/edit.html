@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Task</h1>
+        <form method="POST">
+            <input type="text" name="task" value="{{ task_content }}" class="form-control" required>
+            <button type="submit" class="btn btn-primary mt-2">Update Task</button>
+        </form>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Back to Task List</a>
+    </div>
+</body>
+</html>
